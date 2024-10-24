@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* To position elements inside the container */
+  }
+  
+  header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  header img.logo {
+    max-width: 100px;
+  }
+  
+  .main-content {
+    margin-top: 80px; /* Adding top margin to give space for the logo */
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background-color: #FF52BF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 20px; /* Add space between button and image */
+    cursor: pointer;
+  }
+  
+  .screen-mockups {
+    max-width: 60%;
+    margin-bottom: 30px;
+  }
+  
+  .message-com {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .message-com img {
+    max-width: 50px;
+  }
+  
+  .message-com h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .message-com p {
+    font-size: 1rem;
+    color: #666;
+  }
+  .grow-together {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.grow-together .text-left {
+    flex: 0 0 45%; /* Fix the width of the text to 45% */
+    text-align: left;
+    padding-right: 20px; /* Add some spacing to the right */
+}
+
+.grow-together .image-right {
+    flex: 0 0 50%; /* Set the image width to 50% */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grow-together .image-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .grow-together {
+        flex-direction: column;
+    }
+
+    .grow-together .text-left,
+    .grow-together .image-right {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .grow-together .image-right {
+        justify-content: center;
+    }
+}
+
+  .grow-together h1{
+    font-size: large;
+  }
+ .grow-together p{
+    justify-self: center;
+  }
+  .your-users {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.your-users .text-left {
+    flex: 0 0 45%; /* Text takes 45% of the width */
+    text-align: left;
+    padding-right: 20px; 
+}
+
+.your-users .image-right {
+    flex: 0 0 50%; /* Image takes 50% of the width */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+}
+
+.your-users .image-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .your-users {
+        flex-direction: column;
+    }
+
+    .your-users .text-left,
+    .your-users .image-right {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .your-users .image-right {
+        justify-content: center;
+    }
+}
+.flowing-conversation {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the row order: text on the right, image on the left */
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.flowing-conversation .image-left {
+    flex: 0 0 45%; /* Image will take 45% of the width */
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+}
+
+.flowing-conversation .image-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flowing-conversation .text-right {
+    flex: 0 0 50%; /* Text takes up 50% of the width */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Padding for spacing on larger screens */
+}
+
+@media (max-width: 768px) {
+    .flowing-conversation {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .flowing-conversation .text-right,
+    .flowing-conversation .image-left {
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .flowing-conversation .image-left {
+        justify-content: center;
+    }
+}
+
+
+
+  footer {
+    background-color: #00252E;
+    color: white;
+    padding: 20px 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    max-width: 400px;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #f9f9f9;
+  }
+  
+  .footer-left p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    max-width: 25px;
+  }
+  
+  .footer-right {
+    max-width: 400px;
+  }
+  
+  .footer-right h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .footer-right p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  footer form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 350px;
+  }
+  
+  footer form input {
+    padding: 10px;
+    width: 70%;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  footer form button {
+    background-color: #FF52BF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  footer form button:hover {
+    background-color: #E048A7;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-right, .footer-left {
+      max-width: 100%;
+    }
+  
+    footer form {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    footer form input {
+      width: 100%;
+    }
+  }
+  
+  
